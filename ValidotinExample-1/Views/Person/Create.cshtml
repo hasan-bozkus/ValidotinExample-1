@@ -1,0 +1,76 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model ValidotinExample_1.Models.Person
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<form method="post">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input asp-for="Id" class="form-control" />
+        <span asp-validation-for="Id"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Job"></label>
+        <input asp-for="Job" class="form-control" />
+        <span asp-validation-for="Job"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RePassword"></label>
+        <input asp-for="RePassword" class="form-control" />
+        <span asp-validation-for="RePassword"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MailAddress"></label>
+        <input asp-for="MailAddress" class="form-control" />
+        <span asp-validation-for="MailAddress"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CityId"></label>
+        <input asp-for="CityId" class="form-control" />
+        <span asp-validation-for="CityId"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="WebAddress"></label>
+        <input asp-for="WebAddress" class="form-control" />
+        <span asp-validation-for="WebAddress"></span>
+    </div>
+
+    <input type="submit" value="Gönder" class="btn btn-success btn-sm" />
+
+</form>
+
