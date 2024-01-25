@@ -50,7 +50,7 @@ namespace ValidotinExample_1
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Person}/{action=Create}/{id?}");
+                    pattern: "{controller=Complaint}/{action=Create}/{id?}");
             });
         }
     }
